@@ -1,0 +1,159 @@
+
+
+body {
+    background-color: #0B0A13; /* Background color */
+    position: relative; /* Enables absolute positioning for child elements */
+
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    height: 100vh; /* Full viewport height */
+    flex-direction: column;
+    cursor: url(file:///Users/jswick/Desktop/Rabbits%20Habbits/Assets/carrot-emoji.png), auto;
+    background-image: url('file:///Users/jswick/Desktop/Rabbits%20Habbits/Assets/light-rays.png'); /* Replace with your image path */
+}
+
+
+
+
+#bunny-div{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: -320px;
+}
+
+#eyes{
+    position: absolute;
+left: 392px;
+top: 250px;
+}
+
+
+#content-div{
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Aligns items to the left */
+    gap: 32px;
+}
+
+
+#top-row{
+    display: flex;
+    flex-direction: row; /* Stack children vertically */
+    align-items: flex-end; /* Aligns items to the left */
+}
+
+#bottom-row{
+    display: flex;
+    flex-direction: row; /* Stack children vertically */
+    align-items: flex-end; /* Aligns items to the left */
+}
+
+
+
+
+
+#top-spacing{
+    height: 100vh; /* Full viewport height */
+}
+
+footer{
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: flex-end; /* Vertically centers the content */
+    padding-bottom: 16px;
+}
+
+p{
+color: #7687B4;
+text-align: center;
+font-family: Tickerpixel;
+font-size: 14px;
+}
+
+#font-tickerpixel{
+color: #fff;
+text-align: center;
+font-family: Tickerpixel;
+font-size: 234.115px;
+font-style: normal;
+font-weight: 400;
+line-height: 190px; /* 59.589% */
+letter-spacing: -30px;
+}
+
+#font-times-new-roman{
+color: #fff;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: 234.115px;
+font-style: normal;
+line-height: 160px; /* 59.589% */
+letter-spacing: 10px;
+}
+
+#font-abc-favorite{
+    color: #fff;
+    text-align: center;
+    font-family: ABC Favorit Expanded Variable Unlicensed Trial;
+    font-size: 234.115px;
+    font-style: normal;
+    line-height: 140px; /* 59.589% */
+}
+
+#font-brush{
+    color: #fff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 234.115px;
+    font-style: normal;
+    line-height: 190px; /* 59.589% */
+}
+
+
+
+#font-typewriter{
+    color: #fff;
+    text-align: center;
+    font-family: American Typewriter;
+    font-size: 234.115px;
+    font-style: normal;
+    line-height: 160px; /* 59.589% */ 
+    letter-spacing: 11.706px;
+}
+
+
+
+#font-jetbrains{
+    color: #fff;
+    text-align: center;
+    font-family: JetBrains Mono;
+    font-size: 234.115px;
+    font-style: normal;
+    line-height: 160px; /* 59.589% */ 
+    letter-spacing: -39.799px;
+}
+
+
+#font-impact{
+    color: #fff;
+    text-align: center;
+    font-family: Impact Label Reversed;
+    font-size: 234.115px;
+    font-style: normal;
+    line-height: 80px; /* 59.589% */ 
+    letter-spacing: -23.411px;
+}
+
+
+#font-maler{
+    color: #fff;
+    text-align: center;
+    font-family: Maler;
+    font-size: 200px;
+    font-style: normal;
+    line-height: 135px; /* 59.589% */ 
+}

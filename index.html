@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A description of your webpage">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    
+
+    
+    <div id="top-spacing"></div>
+
+    <div id="content-div">
+        <div id="top-row">
+            <div id="font-tickerpixel">R</div>
+            <div id="bunny-div">
+                 <img id="eyes" src="file:///Users/jswick/Desktop/Rabbits%20Habbits/Assets/Bunny-eyes.svg" alt="bunny-eyes">
+                 <img src="file:///Users/jswick/Desktop/Rabbits%20Habbits/Assets/bunny-face.png" alt="bunny-face">
+            </div>
+            <div id="font-times-new-roman">b</div>
+            <div id="font-abc-favorite">b</div>
+            <div id="font-brush">i</div>
+            <div id="font-times-new-roman">t</div>
+            <div id="font-tickerpixel">s</div>
+        </div>
+
+        <div id="bottom-row">
+            <div id="font-typewriter">H</div>
+            <div id="font-times-new-roman">a</div>
+            <div id="font-tickerpixel">b</div>
+            <div id="font-jetbrains">i</div>
+            <div id="font-impact">t</div>
+            <div id="font-maler">S</div>
+        </div>
+    </div>
+
+    <script>
+        const eyes = document.getElementById('eyes');
+        const eyesContainer = document.getElementById('bunny-div');
+
+        // Define the maximum distance the eyes can move
+        const MAX_DISTANCE = 8;  // 16px / 2 = 8px max movement in any direction
+
+        // Calculate the center of the eyes container
+        const centerX = eyesContainer.offsetWidth / 2;
+        const centerY = eyesContainer.offsetHeight / 2;
+
+        document.addEventListener('mousemove', (e) => {
+            // Get the mouse position
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+
+            // Calculate the distance from the center of the container to the mouse
+            const deltaX = mouseX - eyesContainer.getBoundingClientRect().left - centerX;
+            const deltaY = mouseY - eyesContainer.getBoundingClientRect().top - centerY;
+
+            // Calculate the angle of the mouse relative to the center of the container
+            const angle = Math.atan2(deltaY, deltaX);
+
+            // Limit the movement to the 16x16px area (8px in any direction)
+            const distance = Math.min(Math.hypot(deltaX, deltaY), MAX_DISTANCE);
+
+            // Calculate the new position for the eyes div
+            const eyeX = centerX + distance * Math.cos(angle) - 8; // Subtract 8 to center the eyes
+            const eyeY = centerY + distance * Math.sin(angle) - 8; // Subtract 8 to center the eyes
+
+            // Update the position of the eyes
+            eyes.style.transform = `translate(${eyeX}px, ${eyeY}px)`;
+        });
+    </script>
+
+
+    <footer>
+        <p>&copy; 2024 bun-mazement. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
