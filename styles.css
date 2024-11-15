@@ -9,8 +9,8 @@ body {
     align-items: center; /* Vertically centers the content */
     height: 100vh; /* Full viewport height */
     flex-direction: column;
-    cursor: url(file:///Users/jswick/Desktop/Rabbits%20Habbits/Assets/carrot-emoji.png), auto;
-    background-image: url('file:///Users/jswick/Desktop/Rabbits%20Habbits/Assets/light-rays.png'); /* Replace with your image path */
+    cursor: url/rabbits-habbits/carrot-emoji.png, auto;
+    background-image: url('/rabbits-habbits/light-rays.png'); /* Replace with your image path */
 }
 
 
